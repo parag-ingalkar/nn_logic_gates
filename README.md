@@ -35,6 +35,7 @@ make
 ```
 
 Once you run the ./test you will be prompted as
+(Example to select XOR Gate)
 
 ```bash
 Choose a logic gate:
@@ -47,12 +48,18 @@ Enter choice: 1
 Enter your choice to load the respective model from models/
 
 Upon Selection, the respective model will load and you will be prompted to enter the input values
+(Example input as 0 1)
 
 ```bash
 Enter input (0 or 1) for a and b (or -1 to choose another gate): 0 1
 ```
 
 You should see the predicted value in the output.
+(Example output)
+
+```bash
+Predicted: 0.998475
+```
 
 ## Features
 
