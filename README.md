@@ -56,6 +56,7 @@ Enter choice: 1
 Enter your choice to load the respective model from models/
 
 Upon Selection, the respective model will load and you will be prompted to enter the input values
+
 (Example input as 0 1)
 
 ```bash
