@@ -2,6 +2,14 @@
 
 This project implements simple neural networks for logic gates in C++ with custom tensor and linear algebra code.
 
+## Features
+
+- tensor.hpp contains implementaion of custom Tensor class with basic required functionality.
+- linalg.hpp contains implementaion of basic Tensor (Matrix-Vector) Linear Algebra necessary for Neural Networks
+- The Implementation provides funtionality to Save and Load your trained model.
+- The save_model() function saves the parameters in a .txt file.
+- The load_model() function loads the parameters from the .txt file.
+
 ## Project structure
 
 ```
@@ -61,10 +69,20 @@ You should see the predicted value in the output.
 Predicted: 0.998475
 ```
 
-## Features
+## Troubleshooting
 
-- tensor.hpp contains implementaion of custom Tensor class with basic required functionality.
-- linalg.hpp contains implementaion of basic Tensor (Matrix-Vector) Linear Algebra necessary for Neural Networks
-- The Implementation provides funtionality to Save and Load your trained model.
-- The save_model() function saves the parameters in a .txt file.
-- The load_model() function loads the parameters from the .txt file.
+- If the model is not saved in the ../models/ , make sure you are running the ./train from inside the build folder.
+
+```bash
+cd build
+./train xor
+```
+
+- If you are not getting expected ouput values, make sure you are running the ./test from inside the build folder.
+
+```bash
+cd build
+./test
+```
+
+- Alternatively you can try to retrain the model. Due to random weight initialization and very small network the network might not learn properly. Especially XNOR.
